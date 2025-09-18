@@ -9,7 +9,7 @@
 
 class Pokedex : public SetOfPokemon{
     private :
-        const std::string nomFichier = R"(./extra/pokedex.csv)";
+        const std::string nomFichier = R"(../extra/pokedex.csv)";
         static Pokedex* pPokedex;
         Pokedex();
     public:
