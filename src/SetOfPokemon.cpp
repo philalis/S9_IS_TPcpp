@@ -2,7 +2,7 @@
 // Created by phila on 09/09/2025.
 //
 
-#include "SetOfpokemon.h"
+#include "SetOfPokemon.h"
 
 void SetOfPokemon::display_pokemon() {
     for (auto* i:pokemon_vect) {

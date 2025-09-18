@@ -4,12 +4,12 @@
 
 #ifndef INTROCPP_POKEDEX_H
 #define INTROCPP_POKEDEX_H
-#include "SetOfpokemon.h"
+#include "SetOfPokemon.h"
 
 
 class Pokedex : public SetOfPokemon{
     private :
-        const std::string nomFichier = R"(C:\Users\phila\Downloads\pokedex.csv)";
+        const std::string nomFichier = R"(./extra/pokedex.csv)";
         static Pokedex* pPokedex;
         Pokedex();
     public:

@@ -4,7 +4,7 @@
 
 #ifndef INTROCPP_POKEMONPARTY_H
 #define INTROCPP_POKEMONPARTY_H
-#include "SetOfpokemon.h"
+#include "SetOfPokemon.h"
 
 
 class PokemonParty : public SetOfPokemon{

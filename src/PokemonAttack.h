@@ -4,7 +4,7 @@
 
 #ifndef INTROCPP_POKEMONATTACK_H
 #define INTROCPP_POKEMONATTACK_H
-#include "SetOfpokemon.h"
+#include "SetOfPokemon.h"
 
 
 class PokemonAttack :public SetOfPokemon {
