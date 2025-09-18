@@ -14,7 +14,10 @@ class PokemonParty : public SetOfPokemon{
     void addPokemonToParty(Pokemon p);
     void removePokemonFromParty(Pokemon p);
 
-    ~PokemonParty();
+    Pokemon find_by_id(int id) override;
+    Pokemon find_by_name(std::string name) override;
+
+    void showParty();
 };
 
 
