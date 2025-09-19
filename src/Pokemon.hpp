@@ -40,6 +40,8 @@ class Pokemon {
 
     void do_dmg(Pokemon* otherPokemon);
     double get_damaged(double dmg);
+
+    void theFirstFight();
 };
 
 #endif //INTROCPP_POKEMON_H

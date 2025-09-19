@@ -25,5 +25,13 @@ int main(){
     std::cout << "" << std::endl;
     party.showParty();
 
+
+    Pokemon gengar = pokedex.find_by_name("Gengar");
+    Pokemon nidorino = pokedex.find_by_name("Nidorino");
+    party.addPokemonToParty(gengar);
+    party.addPokemonToParty(nidorino);
+    gengar.do_dmg(&nidorino);
+
+
     return 0;
 }

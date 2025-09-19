@@ -1,5 +1,9 @@
 #include "Pokemon.hpp"
 
+#include <iostream>
+#include <fstream>
+#include <string>
+
 #include <utility>
 
 int Pokemon::pokemon_count = 0;
@@ -64,9 +68,26 @@ double Pokemon::get_damaged(double dmg) {
 }
 
 void Pokemon::do_dmg(Pokemon* otherPokemon){
+    if ((name=="Gengar" && otherPokemon->name=="Nidorino") || (name=="Nidorino" && otherPokemon->name=="Gengar")) {
+        theFirstFight();
+    }
     double dmg_dealt = attack - otherPokemon->defense;
     if (dmg_dealt <=0) {
         return;
     }
     otherPokemon->get_damaged(dmg_dealt);
+}
+
+void Pokemon::theFirstFight() {
+    std::ifstream fichier("../.Review_Add/The_First_Fight.txt");
+    if (!fichier.is_open()) {
+        std::cerr << "Impossible d'ouvrir le fichier !" << std::endl;
+    }
+
+    std::string ligne;
+    while (std::getline(fichier, ligne)) {
+        std::cout << ligne << std::endl;
+    }
+
+    fichier.close();
 }
